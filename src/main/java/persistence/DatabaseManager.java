@@ -80,6 +80,7 @@ public class DatabaseManager {
                 + " work_phone varchar (45) DEFAULT NULL,\n"
                 + " work_email varchar (100) DEFAULT NULL,\n"
                 + " shop_id int,\n"
+                + " available tinyint,\n"
                 + " PRIMARY KEY (mechanic_id),\n"
                 + " FOREIGN KEY (shop_id) REFERENCES repair_shop (shop_id)\n"
                 + ");";
