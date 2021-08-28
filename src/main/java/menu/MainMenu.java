@@ -13,7 +13,7 @@ public class MainMenu {
         databaseManager = new DatabaseManager();
         databaseManager.initTables();
 
-        input = new Scanner(System.in);;
+        input = new Scanner(System.in);
         subMenuOptions = new SubMenuOptions();
         subMenuOptions.menuChoice(input);
     }

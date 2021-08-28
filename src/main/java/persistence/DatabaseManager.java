@@ -15,7 +15,6 @@ public class DatabaseManager {
         connection = DBUtil.getDBConnection();
     }
 
-    //todo
     //create tables
 
     private void createTableCustomer() {

@@ -95,7 +95,6 @@ modules.xml
 .idea/sonarlint
 
 ### Java ###
-User.java
 # Compiled class file
 *.class
 

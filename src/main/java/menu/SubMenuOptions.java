@@ -5,9 +5,11 @@ import java.util.Scanner;
 public class SubMenuOptions {
 
     private MenuCustomer menuCustomer;
+    private MenuMechanic menuMechanic;
 
     public SubMenuOptions() {
         this.menuCustomer = new MenuCustomer();
+        this.menuMechanic = new MenuMechanic();
     }
 
     private int menuOptions(Scanner input) {
@@ -16,7 +18,7 @@ public class SubMenuOptions {
         System.out.println("-------------------------\n");
         System.out.println();
         System.out.println("1: Sub Menu - Customer");
-        System.out.println("2: Sub Menu - <NAME>");
+        System.out.println("2: Sub Menu - Mechanic");
         System.out.println("3: Sub Menu - <NAME>");
         System.out.println("4: Sub Menu - <NAME>");
         System.out.println("100 - Quit");
@@ -36,6 +38,7 @@ public class SubMenuOptions {
                     this.menuCustomer.menuChoice(input);
                     break;
                 case 2:
+                    this.menuMechanic.menuChoice(input);
                     break;
                 case 3:
                     break;
